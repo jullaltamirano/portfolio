@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <script src="./scripts/scripts.js"></script>
+    <title>Jull Altamirano Dev</title>
+</head>
+<body class="">
+    <nav>
+        <div>
+            <span class="title_1">const</span><span class="title_2"><b><a href="#">Jull Altamirano</a></b></span><span class="title_1">=</span>
+        </div>
+        <div class="menu_container">
+            <span class="title_1"><b>[</b></span>
+            <ul>                
+                <li><a href="#projects">proyectos,</a></li>
+                <li><a href="#skills">tecnologías,</a></li>
+                <li><a href="#about">sobre mí,</a></li>
+                <li><a href="#contact">contacto</a></li>
+            </ul>
+            <span class="title_1"><b>]</b></span>
+        </div>
+    </nav>
+    <section class="home_container" id="home">
+        <div>
+            <span>Hola, soy</span>
+            <h1>Jull Altamirano</h1>
+            <h2>Fullstack Developer</h2>
+            <span>Programador especializado en crear experiencias digitales. Actualmente enfocado en mejorar mis aptitudes y aprender nuevas en el proceso. </span>
+            <button>Descarga mi CV</button>
+        </div>
+    </section>
+    <section class="project_container" id="projects">
+        <h2>Proyectos</h3>
+        <div class="card_container">
+            <div class="project_card">
+                <h3>CSGO App</h3>
+                <div class="deploy_container">
+                    <img src="./src/app_img/csgo-app.jpg" class="deploy_img"/>
+                    <a href="https://app-csgo.vercel.app/" class="deploy_hover">
+                        <span>Deploy</span>
+                    </a>
+                </div>
+                <div class="text_container">
+                    <span>Sitio web inspirada en el juego Counter Strike, en el cual se muestra información sobre las armas y mapas del juego. Las armas tienen un cargador interactivo.</span>
+                    <div class="svg_container">
+                        <span>ReactJS, ReduxJS, CSS, JS</span>
+                        <div>
+                            <a href="https://app-csgo.vercel.app/" target="_blank"><img src="./src/resize.png" class="svg" /></a>
+                            <a href="https://github.com/jullaltamirano/app-csgo-hw" target="_blank"><img src="./src/github.png" class="svg"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project_card">
+                <h3>Reaction App</h3>
+                <div class="deploy_container">
+                    <img src="./src/app_img/reaction-app.jpg" class="deploy_img"/>
+                    <a href="https://reaction-app.vercel.app/" class="deploy_hover">
+                        <span>Deploy</span>
+                    </a>
+                </div>
+                <div class="text_container">
+                    <span>Juego para medir la reacción medida en ms, cuenta con un "Lowest Time" que te muestra el mejor tiempo.</span>
+                    <div class="svg_container">
+                        <span>HTML, CSS, JS</span>
+                        <div>
+                            <a href="https://app-csgo.vercel.app/" target="_blank"><img src="./src/resize.png" class="svg" /></a>
+                            <a href="https://github.com/jullaltamirano/app-csgo-hw" target="_blank"><img src="./src/github.png" class="svg"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills_container" id="skills">
+        <h2>Tecnologías</h2>
+        <div>
+            <div class="skill_card">
+                <img src="./src/tech_logos/html.png" alt="html5"/>
+                <span>HTML5</span>
+            </div>
+            <div class="skill_card">
+                <img src="./src/tech_logos/css.png" alt="css3"/>
+                <span>CSS3</span>
+            </div>
+            <div class="skill_card">
+                <img src="./src/tech_logos/js.png" alt="javascript"/>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill_card">
+                <img src="./src/tech_logos/reactjs.png" alt="reactjs"/>
+                <span>ReactJS</span>
+            </div>
+            <div class="skill_card">
+                <img src="./src/tech_logos/reduxjs.png" alt="reduxjs"/>
+                <span>ReduxJS</span>
+            </div>
+            <div class="skill_card">
+                <img src="./src/tech_logos/expressjs.png" alt="expressjs"/>
+                <span>ExpressJS</span>
+            </div>
+            <div class="skill_card">
+                <img src="./src/tech_logos/postgresql.png" alt="postgresql"/>
+                <span>PostgreSQL</span>
+            </div>
+        </div>
+    </section>
+    <section class="about_container" id="about">
+        <h2>Sobre mí</h2>
+        <span>Mi primer contacto con la programación fue en el año 2017 a través de Wordpress y sus diversos plugins, a través de los cuales logré crear mis primeras páginas web y ecommerce de manera ocasional.</span>
+        <span>En mi deseo de poder tener más herramientas para poder trabajar, decidi aprender sobre HTML y CSS, pasando luego hacia JavaScript, Frameworks y librerías, lo cual me encaminó a donde me encuentro hoy.</span>
+    </section>
+    <section class="contact_container" id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label>Nombre</label>
+            <input type="text" placeholder="Inserte su nombre aquí..."/>
+            <label>Email</label>
+            <input type="email" placeholder="Inserte su email aquí..."/>
+            <label>Mensaje</label>
+            <input type="textarea" placeholder="Inserte su mensaje aquí..."/>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </section>
+    <footer class="footer_container">
+        <span>Creado con HTML, CSS y JS puro</span>
+        <div class="logo_container">
+            <a href=""><img src="./src/github_blanco.png"/>Github</a>
+            <a href=""><img src="./src/linkedin_blanco.png"/>Linkedin</a>               
+        </div>
+    </footer>
+</body>
+</html>
