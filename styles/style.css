@@ -9,8 +9,12 @@
     --lightgreen: #EAFFFA;
     --black: #292929;
     --grey: #6d6d6d;
-    --green: #209F8C;
-    --white: #f8f8f8;
+    --green: rgb(32, 159, 140);
+    --white: rgb(248, 248, 248);
+}
+
+html {
+    background-color: var(--white);
 }
 
 body {
@@ -18,7 +22,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-size: 16px;    
-    background-color: var(--white);
+    background-image: url('../src/background.png');
     color: var(--black);
 }
 
@@ -30,7 +34,7 @@ a {
 /* ! Nav  */
 
 nav {
-    background-color: var( --lightgreen);
+    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
