@@ -13,7 +13,7 @@
     --white: rgb(248, 248, 248);
 }
 
-html {
+.light {
     background-color: var(--white);
 }
 
@@ -40,6 +40,16 @@ nav {
     justify-content: space-evenly;
     width: 100%;
     height: 3.75em;
+    position: fixed;
+    transition: 0.4s;
+    z-index: 200;
+}
+
+.logo_menu_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .title_1 {
@@ -54,19 +64,62 @@ nav {
 
 .menu_container {
     display: flex;
+}
 
+.menu_container1 {
+    display: flex;
 }
 
 .menu_container ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     list-style: none;
+    width: 50vw;
 }
 
 .menu_container ul li {
     font-size: 1.25em;
-    padding: 0px 1.875em;
 }
+
+.menu_container ul a:hover {
+    border-bottom: 1px solid var(--green);
+}
+
+.menu_container button {
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+    cursor: pointer;
+    margin-left: 2em;
+    transition: 0.3s;
+}
+
+.menu_container button:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+#dark_light {
+    width: 2.5em;
+}
+
+.ham_button {
+    background-color: transparent;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.bar {
+    display: none;
+    background-color: var(--black);
+    height: 3px;
+    width: 22px;
+    margin: 5px auto;
+    border-radius: 2px;
+}
+
 
 /* ! home - 1ra seccion */
 
@@ -74,7 +127,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 93vh;
+    height: 100vh;
     width: 60vw;
 }
 
@@ -117,7 +170,22 @@ nav {
 
 .home_container div button:hover {
     transform: scale(1.05);
-    transition: 0.3s;;
+    transition: 0.3s;
+}
+
+.rrss_container {
+    padding: 1.5em 0em;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+}
+
+.rrss_container img {
+    margin-right: 0.5em;
+}
+
+.rrss_container a {
+    margin-right: 1em !important;
 }
 
 /* ! proyectos */
@@ -376,6 +444,8 @@ form button:hover {
 
 .logo_container {
     padding: 1em 0em;
+    display: flex;
+    flex-direction: row !important;
 }
 
 .logo_container img{
@@ -385,6 +455,163 @@ form button:hover {
 
 /* !Dark Mode */
 
-.dark_body {
+.dark {
     background-color: var(--black);
+}
+
+@media (max-width: 1023px){
+
+    /* ! Nav  */
+
+    .title_1 {
+        font-size: 1em;
+    }
+    
+    .title_2 {
+        font-size: 1.3em;
+        padding: 0px 0.5em;
+    }
+    
+    .menu_container ul {
+        width: 50vw;
+    }
+    
+    .menu_container ul li {
+        font-size: 1em;
+    }
+
+    /* ! home - 1ra seccion */
+
+    .home_container {
+        height: 100vh;
+        width: 80vw;
+    }
+
+    .home_container div {    
+        width: 60vw;
+    }
+
+    /* ! proyectos */
+
+    .project_container {
+        width: 80vw;
+    }
+
+    .project_container h2 {
+        font-size: 1.7em;
+    }
+
+    /* ! tecnologías */
+
+    .skills_container {
+        width: 80vw;
+    }
+
+    .skills_container h2 {
+        font-size: 1.7em;
+    }
+
+    /* ! sobre mí */
+
+    .about_container {
+        width: 80vw;
+    }
+
+    .about_container h2 {    
+        font-size: 1.7em;
+    }
+
+    .about_container span {
+        font-size: 1.1em;
+    }
+
+    /* ! contacto */
+
+    .contact_container {
+        width: 80vw;
+    }
+
+    .contact_container h2 {
+        font-size: 1.7em;
+    }
+
+    input {
+        width: 60vw;
+    }
+
+}
+
+@media (max-width: 800px){
+
+    /* ! Nav  */
+
+    #nav {
+        align-items: flex-start;
+        height: 3.75em;
+    }
+
+    .title_1 {
+        padding: 0.3em 0em;
+        padding-left: 1em;
+        font-size: 1em;
+    }
+    
+    .title_2 {
+        font-size: 1.3em;
+        padding: 0px 0.5em;
+    }
+
+    .ham_button {
+        position:absolute;
+        top: 1.1em;
+        right: 2em;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .logo_menu_container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .title_container {
+        padding: 1em 1.2em;
+        background-color: var(--white);
+        width: 100%;
+        z-index: 100;
+    }
+
+    .menu_container {
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--white);
+        padding: 0px;
+        margin: 0px;
+        width: 100vw;
+        transition: 0.5s;
+    }
+
+    .top {
+        top: -213px;
+        transition: 0.5s;
+    }
+    
+    .menu_container ul {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menu_container ul li {
+        font-weight: 600;
+        padding: 0.5em 0em;
+        background-color: var(--white);
+        text-align: center;
+        width: 100%;
+    }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
-    <script src="./scripts/scripts.js"></script>
     <title>Jull Altamirano Dev</title>
 </head>
-<body class="">
-    <nav>
-        <div>
-            <span class="title_1">const</span><span class="title_2"><b><a href="#">Jull Altamirano</a></b></span><span class="title_1">=</span>
-        </div>
-        <div class="menu_container">
-            <span class="title_1"><b>[</b></span>
-            <ul>                
-                <li><a href="#projects">proyectos,</a></li>
-                <li><a href="#skills">tecnologías,</a></li>
-                <li><a href="#about">sobre mí,</a></li>
-                <li><a href="#contact">contacto</a></li>
-            </ul>
-            <span class="title_1"><b>]</b></span>
-        </div>
+<body>
+    <nav id="nav" style="top: 0em">  
+        <div class="logo_menu_container">
+            <div class="title_container">
+                <span class="title_1">const</span><span class="title_2"><b><a href="#">Jull Altamirano</a></b></span><span class="title_1">=</span>
+                <button class="ham_button">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </button>
+            </div>
+            <div class="menu_container1">
+                <div class="menu_container" style="top: -213px">
+                    <span class="title_1"><b>[</b></span>
+                    <ul>                
+                        <li><a href="#projects">proyectos,</a></li>
+                        <li><a href="#skills">tecnologías,</a></li>
+                        <li><a href="#about">sobre mí,</a></li>
+                        <li><a href="#contact">contacto</a></li>
+                    </ul>
+                    <span class="title_1"><b>]</b></span>
+                </div>
+                <!-- <button><img src="./src/dia-y-noche.png" id="dark_light"></button> -->    
+            </div>
+        </div>      
+        
     </nav>
     <section class="home_container" id="home">
         <div>
@@ -34,6 +44,10 @@
             <h2>Fullstack Developer</h2>
             <span>Programador especializado en crear experiencias digitales. Actualmente enfocado en mejorar mis aptitudes y aprender nuevas en el proceso. </span>
             <button onclick="window.open('./src/Jull Pariamachi Altamirano - CV - Full Stack Developer.pdf')">Descarga mi CV</button>
+            <div class="rrss_container">
+                <a href="https://github.com/jullaltamirano" target="_blank"><img src="./src/github.png" class="svg"/>Github</a>
+                <a href="https://www.linkedin.com/in/jull-altamirano/" target="_blank"><img src="./src/linkedin.png" class="svg"/>Linkedin</a>               
+            </div>
         </div>
     </section>
     <section class="project_container" id="projects">
@@ -44,7 +58,7 @@
                 <div class="deploy_container">
                     <img src="./src/app_img/csgo-app.jpg" class="deploy_img"/>
                     <a href="https://app-csgo.vercel.app/" class="deploy_hover">
-                        <span>Deploy</span>
+                        <span>Ver Proyecto</span>
                     </a>
                 </div>
                 <div class="text_container">
@@ -63,7 +77,7 @@
                 <div class="deploy_container">
                     <img src="./src/app_img/reaction-app.jpg" class="deploy_img"/>
                     <a href="https://reaction-app.vercel.app/" class="deploy_hover">
-                        <span>Deploy</span>
+                        <span>Ver Proyecto</span>
                     </a>
                 </div>
                 <div class="text_container">
@@ -136,5 +150,8 @@
             <a href="https://www.linkedin.com/in/jull-altamirano/" target="_blank"><img src="./src/linkedin_blanco.png" class="svg"/>Linkedin</a>               
         </div>
     </footer>
+    <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/ham_menu.js"></script>
 </body>
 </html>
