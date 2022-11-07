@@ -7,8 +7,6 @@ let darkLinkedin = document.querySelector('.dark_linkedin')
 let darkButtonImg = document.querySelector('.dark_light_img')
 let button = document.querySelector('.dark_light')
 
-console.log(button.classList)
-
 button.addEventListener('click',() => {
     darkDiv.forEach(e => e.classList.toggle('dark'))
     darkText.forEach(e => e.classList.toggle('dark_text'))

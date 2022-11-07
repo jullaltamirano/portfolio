@@ -135,13 +135,13 @@
     </section>
     <section class="contact_container" id="contact">
         <h2 class="dark_text_selector">Contacto</h2>
-        <form>
-            <label class="dark_text_selector">Nombre</label>
-            <input type="text" placeholder="Inserte su nombre aquí..." class="dark_selector dark_text_selector"/>
-            <label class="dark_text_selector">Email</label>
-            <input type="email" placeholder="Inserte su email aquí..." class="dark_selector dark_text_selector"/>
-            <label class="dark_text_selector">Mensaje</label>
-            <input type="textarea" placeholder="Inserte su mensaje aquí..." class="dark_selector dark_text_selector"/>
+        <form id="form" action="https://formsubmit.co/jullaltamiranop@gmail.com" method="POST">
+            <label class="dark_text_selector" for="nombre">Nombre</label>
+            <input type="text" placeholder="Inserte su nombre aquí..." class="dark_selector dark_text_selector" name="nombre" id="nombre"/>
+            <label class="dark_text_selector" for="email">Email</label>
+            <input type="email" placeholder="Inserte su email aquí..." class="dark_selector dark_text_selector" name="email" id="email"/>
+            <label class="dark_text_selector" for="mensaje">Mensaje</label>
+            <input type="textarea" placeholder="Inserte su mensaje aquí..." class="dark_selector dark_text_selector" name="mensaje" id="mensaje"/>
             <button type="submit" class="dark_selector">ENVIAR</button>
         </form>
     </section>
@@ -155,5 +155,6 @@
     <script src="./scripts/dark_mode.js"></script>
     <script src="./scripts/scroll.js"></script>
     <script src="./scripts/ham_menu.js"></script>
+    <script src="./scripts/form.js"></script>
 </body>
 </html>
