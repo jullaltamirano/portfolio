@@ -399,7 +399,7 @@ nav {
     border-bottom: 2px solid var(--green);
 }
 
-form {
+/* form {
     display: flex;
     flex-direction: column;
     margin-bottom: 4em;
@@ -438,6 +438,29 @@ form button {
 form button:hover {    
     transform: scale(1.05);
     transition: 0.3s;
+} */
+
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+.contact_info img{
+    width: 8em;
+    margin-bottom: 2em;
+}
+
+.contact_info span {
+    font-size: 1.5em;
 }
 
 /* !Footer */
@@ -549,9 +572,9 @@ form button:hover {
         font-size: 1.7em;
     }
 
-    input {
+    /* input {
         width: 60vw;
-    }
+    } */
 
 }
 
@@ -655,6 +678,22 @@ form button:hover {
         z-index: 200;
     }    
 
+    /* ! sobre mí */
+
+    .about_container {
+        width: 90vw;
+    }
+
+    /* !Contacto */
+
+    .contacts {
+        width: 80vw;
+    }
+
+    .contact_info img{
+        width: 6em;
+    }
+
     /*++ Dark Mode */
 
     .dark_media {
@@ -740,18 +779,30 @@ form button:hover {
     }
 
     /* ! contacto */
-
+    
     .contact_container {
         width: 100vw;
     }
 
     .contact_container h2 {
         font-size: 1.7em;
+    } 
+
+    .contacts {
+        width: 100vw;
     }
 
-    input {
-        width: 70vw;
+    .contact_info img{
+        width: 5em;
     }
+
+    .contact_info span {
+        font-size: 1em;
+    }
+
+    /* input {
+        width: 70vw;
+    } */
 
     /* !Footer */
 
